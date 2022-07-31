@@ -9,6 +9,7 @@ import { PainelComponent } from './painel/painel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { PainelService } from './painel.service';
 
 @NgModule({
   imports: [
@@ -33,6 +34,6 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     PainelComponent,
   ],
   bootstrap: [AppComponent],
-  providers: [],
+  providers: [PainelService],
 })
 export class AppModule {}

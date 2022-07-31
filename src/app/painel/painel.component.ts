@@ -22,6 +22,7 @@ export class PainelComponent implements OnInit {
           changes.map((c) => ({ key: c.payload.key, ...c.payload.val() }))
         )
       );
+    console.log(this.list);
   }
 
   ngOnInit() {}
