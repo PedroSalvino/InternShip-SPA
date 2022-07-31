@@ -15,10 +15,18 @@
       </a>
     </div>
     <div class="col-md-4 collapse width bg-secondary" id="sidemenu">
-      <div class="">
-        This is some placeholder content for a horizontal collapse. It's hidden
-        by default and shown when triggered.
-      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Dados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list.PEDRO_ALVARES_CABRAL | async">
+            <td>{{ item.calado }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

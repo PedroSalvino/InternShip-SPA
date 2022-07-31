@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { PainelComponent } from './painel/painel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { AngularFireModule } from '@angular/fire';
       messagingSenderId: '523565532987',
       appId: '1:523565532987:web:fffefcf8b52210c95f991e',
     }),
+    AngularFireDatabaseModule,
   ],
 
   declarations: [
