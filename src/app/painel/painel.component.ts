@@ -9,6 +9,9 @@ import { Observable } from 'rxjs';
   styleUrls: ['./painel.component.css'],
 })
 export class PainelComponent implements OnInit {
+  listRef: AngularFireList<any>;
+  list: Observable<any[]>;
+
   constructor(private db: AngularFireDatabase) {
     this.listRef = db.list('comparacao_estimativa_navios');
 
@@ -20,9 +23,6 @@ export class PainelComponent implements OnInit {
         )
       );
   }
-
-  listRef: AngularFireList<any>;
-  list: Observable<any[]>;
 
   ngOnInit() {}
 }
